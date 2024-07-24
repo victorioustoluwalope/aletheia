@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: coral;
+}
+header img {
+    width: 8rem;
+    height: 8rem;
+}
+.header {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+nav a {
+    color: #770202;
+}
+.footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #770202;
+    color: #fff;
+}
+footer.footsy {
+    padding-top: 2%;
+    padding-left: 5%;
+}
+ul li {
+    list-style: none;
+}

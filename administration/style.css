@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Nunito Sans";
+
+}
+.founder {
+    text-align: center;
+}
+.founder img {
+    height: 25%;
+    width: 25%;
+}
+.principalStaff,
+.provostStaff {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 1rem; */
+}
+.principalStaff img {
+    height: 50%;
+    width: 80%;
+}
+.provostStaff img {
+    height: 50%;
+    width: 90%;
+}
