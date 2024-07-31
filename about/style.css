@@ -21,7 +21,7 @@ li {
     line-height: 2;
 }
 i {
-    font-size: 28px;
+    font-size: 22px;
 }
 .backgroundImage {
     box-sizing: border-box;
@@ -89,8 +89,161 @@ i {
 .whyAletheia {
     padding: 1rem 2em;
 }
-/* .whyAletheia li {
-    list-style-type: square;
+.block {
+    text-align: center;
+    padding: 1em;
+}
+.animatable {
+  /* initially hide animatable objects */
+  visibility: hidden;
+
+  /* initially pause animatable objects their animations */
+  animation-play-state: paused;
+}
+
+/* show objects being animated */
+.animated {
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-play-state: running;
+}
+
+/* CSS Animations (extracted from http://glifo.uiparade.com/) */
+/* @keyframes fadeIn {
+  0%,
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  60% {
+    transform: translateX(20px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    transform: translateX(-20px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* @keyframes moveUp {
+  0% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeBgColor {
+  0%,
+  70% {
+    background: none;
+  }
+  100% {
+    background: #464646;
+  }
+} */
+
+.animated.animationDelay {
+  animation-delay: 0.4s;
+}
+.animated.animationDelayMed {
+  animation-delay: 1.2s;
+}
+.animated.animationDelayLong {
+  animation-delay: 1.6s;
+}
+/* .animated.fadeBgColor {
+  animation-name: fadeBgColor;
+}
+.animated.bounceIn {
+  animation-name: bounceIn;
+} */
+.animated.bounceInRight {
+  animation-name: bounceInRight;
+}
+.animated.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+/* .animated.fadeIn {
+  animation-name: fadeIn;
+}
+.animated.fadeInDown {
+  animation-name: fadeInDown;
+}
+.animated.fadeInUp {
+  animation-name: fadeInUp;
+}
+.animated.moveUp {
+  animation-name: moveUp;
 } */
 .introCollegeAndCourses {
     text-align: center;
@@ -126,31 +279,6 @@ button.applyButton a:hover {
     color: #410000;
     font-size: 24px;
 }
-.college {
-    text-align: center;
-    color: #fff;
-    box-sizing: border-box;
-    padding: 2rem;
-    margin: 2rem;
-}
-.collegeEngineering {
-    background: url(../images/engineering.jpg) no-repeat center;
-    background-size: 90%;
-
-}
-.collegeArts {
-    background: url(../images/writing.jpg) no-repeat center;
-    background-size: 90%;
-}
-.collegeScience {
-    background: url(../images/tools.png) no-repeat center;
-    background-size: 90%;
-    color: #000;
-}
-/* .collegeAndCourses {
-    display: flex;
-    flex-direction: row;
-} */
 .admissionsIcon {
     display: flex;
     flex-direction: row;
@@ -166,13 +294,77 @@ button.applyButton a:hover {
 div.ug {
     background: url(../images/student.jpg) no-repeat;
     background-size: 100%;
+    border-radius: 10px;
 }
 div.pg {
-    background: url(../images/postgraduate.jpg) no-repeat;
+    background: url(../images/postgrad.jpg) no-repeat;
     background-size: 100%;
+    border-radius: 10px;
+}
+.footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #770202;
+    color: #fff;
+}
+footer.footsy {
+    padding: 2%;
+}
+ul li {
+    list-style: none;
+}
+.footer a {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: coral;
+}
+.footer li {
+    line-height: 1.8em;
+}
+.leftFooter {
+    box-sizing: border-box;
+}
+.leftFooter p.motto {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
-
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 680px) {
+    .aboutTheSchool {
+        box-sizing: border-box;
+        background-color: white;
+        width: 75vw;
+        padding: 2rem 2rem;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .midSection {
+        box-sizing: border-box;
+        display: block;   
+        margin: 1em;
+    }
+    .block img {
+        width: 95%;
+        height: 95%;
+    }
+    .admissionsIcon {
+        display: block;
+        padding: 1rem;
+    }
+    .ug,
+    .pg {
+        width: 95%;
+        height: 15rem;
+        text-align: center;
+    }
+    div.pg {
+        margin-top: 1em;
+    }
+    .footer {
+        display: block;
+    }
 }
