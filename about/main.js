@@ -1,5 +1,4 @@
 // Animation upon scroll for Why Aletheia Components
-
 document.addEventListener('DOMContentLoaded', function () {
   
   // Function which adds the 'animated' class to any '.animatable' in view
@@ -27,5 +26,4 @@ document.addEventListener('DOMContentLoaded', function () {
   // Hook doAnimations on scroll, and trigger a scroll
   window.addEventListener('scroll', doAnimations);
   window.dispatchEvent(new Event('scroll'));
-
 });

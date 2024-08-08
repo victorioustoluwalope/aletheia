@@ -1,8 +1,10 @@
+/* General styling for all pages starts */
+
 * {
     margin: 0;
     padding: 0;
     font-size: 18px;
-    font-family: "Nunito Sans";
+    font-family: "Nunito Sans", sans-serif;
 }
 body {
     background-color: #fae5e1;
@@ -23,6 +25,63 @@ li {
 i {
     font-size: 22px;
 }
+/* General styling for all pages ends */
+
+/* Styling for header starts */
+/* header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
+main {
+  margin-top: 6em;
+} */
+.header {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    padding: .8em;
+}
+.preNav {
+    padding-top: 0.7em;
+}
+.staffBtn {
+    margin-left: 1em;
+}
+.preNav button {
+    width: 6rem;
+    /* height: 1rem; */
+    background-color: #770202;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.preNav button a{
+    color: #fff;
+}
+.preNav button:hover {
+    background-color: goldenrod;
+    transform: scale(1.04);
+}
+.preNav button a:hover {
+    color: #000;
+}
+nav {
+    padding-top: 1em;
+}
+nav a {
+    color: #770202;
+    padding-right: .5em;
+}
+
+/* Styling for header ends */
+
 .backgroundImage {
     box-sizing: border-box;
     background: url(../images/side-1.jpg) no-repeat center center/cover;
@@ -34,6 +93,7 @@ i {
     /* filter: blur(10px); */
     /* filter: opacity(0.2); */
     opacity: 0.7;
+    padding: 1em 0;
 }
 .header h1,
 .header h2,
@@ -89,7 +149,7 @@ i {
 .whyAletheia {
     padding: 1rem 2em;
 }
-.block {
+.bounce {
     text-align: center;
     padding: 1em;
 }
@@ -253,7 +313,7 @@ button.applyButton {
     font-weight: 600;
     width: 12rem;
     height: 4rem;
-    background-color: #410000;
+    background-color: #770202;
     border: none;
     border-radius: 5px;
     padding: 1rem;
@@ -264,7 +324,7 @@ button.applyButton a {
     color: #fff;
 }
 button.applyButton:hover {
-    background-color: #b8606b;
+    background-color: goldenrod;
     /* color: #000; */
     transform: scale(1.04);
 }
@@ -301,6 +361,9 @@ div.pg {
     background-size: 100%;
     border-radius: 10px;
 }
+
+/* Styling for footer starts*/
+
 .footer {
     box-sizing: border-box;
     display: flex;
@@ -332,6 +395,8 @@ ul li {
     text-align: center;
 }
 
+/* Styling for footer ends*/
+
 @media only screen and (max-width: 680px) {
     .aboutTheSchool {
         box-sizing: border-box;
@@ -347,7 +412,7 @@ ul li {
         display: block;   
         margin: 1em;
     }
-    .block img {
+    .bounce img {
         width: 95%;
         height: 95%;
     }
