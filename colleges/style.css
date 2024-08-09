@@ -81,30 +81,34 @@ nav a:hover {
 }
 
 /* Styling for header ends */
-img {
-    border-radius: 5px;
-    box-shadow: 10px 10px 3px rgba(110, 0, 0, 0.3);
+
+.college {
+    /* text-align: center; */
+    box-sizing: border-box;
+    padding: 2rem;
+    margin: 2rem;
 }
-.founder {
+/* .image {
     text-align: center;
-    margin-top: 1rem;
+} */
+.image img {
+    width: 900px;
+    height: 400px;
 }
-.founder img {
-    height: 25%;
-    width: 25%;
+/* .collegeEngineering {
+    background: url(../images/engineering.jpg) no-repeat center;
+    background-size: 90%;
+
 }
-h3 {
-    text-align: center;
-    padding: 1rem;
-    text-decoration: underline;
+.collegeArts {
+    background: url(../images/writing.jpg) no-repeat center;
+    background-size: 90%;
 }
-.principalStaff,
-.provostStaff {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /* margin-top: 1rem; */
-}
+.collegeScience {
+    background: url(../images/tools.png) no-repeat center;
+    background-size: 90%;
+    color: #000;
+} */
 
 /* 
 Some Other Styling for Page Content
