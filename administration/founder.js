@@ -1,0 +1,1 @@
+document.getElementsByClassName("header").innerHTML = fetch('header.html')

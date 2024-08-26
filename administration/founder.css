@@ -1,0 +1,122 @@
+/* General styling for all pages starts */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+}
+body {
+    background-color: #fae5e1;
+}
+h1, 
+h2,
+h3 {
+    font-weight: 800;
+    font-size: 30px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    line-height: 2;
+}
+i {
+    font-size: 22px;
+}
+
+/* General styling for all pages ends */
+
+/* Styling for header starts */
+
+.header {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    /* border-bottom: 2px solid #000; */
+    text-align: center;
+    padding: .8em;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.preNav {
+    padding-top: 0.7em;
+}
+.staffBtn {
+    margin-left: 1em;
+}
+.preNav button {
+    width: 6rem;
+    /* height: 1rem; */
+    background-color: #770202;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.preNav button a{
+    color: #fff;
+}
+.preNav button:hover {
+    background-color: goldenrod;
+    transform: scale(1.04);
+}
+.preNav button a:hover {
+    color: #000;
+}
+nav {
+    padding-top: 1em;
+}
+nav a {
+    color: #770202;
+    padding-right: .5em;
+}
+nav a:hover {
+    background-color: goldenrod;
+    transform: scale(1.02);
+    border-radius: 5px;
+    padding: .5em;
+}
+
+/* Styling for header ends */
+
+/* 
+Styling for the main page
+*/
+
+/* Styling for footer starts*/
+
+.footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #770202;
+    color: #fff;
+}
+footer.footsy {
+    padding: 2%;
+}
+ul li {
+    list-style: none;
+}
+.footer a {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: coral;
+}
+.footer li {
+    line-height: 1.8em;
+}
+.leftFooter {
+    box-sizing: border-box;
+}
+.leftFooter p.motto {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Styling for footer ends*/
